@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+    background-color: rgb(20, 0, 0);
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100vw;  
+    height: 100vh; 
+    position: relative;
+    box-shadow: 0 0 20px rgba(250, 30, 30, 0.5);
+}
+
+.container::before,
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.container::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(100, 0, 0, 0.8), transparent);
+}
+
+.container::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(100, 0, 0, 0.8), transparent);
+}
+
+#backBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: hsl(10, 92%, 30%);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backBtn:hover {
+    background-color: hsl(10, 92%, 40%);
+}
+
+#backBtn:active {
+    background-color: hsl(10, 92%, 50%);
+}
+
+.valDin {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    left: 28%;
+    transform: translateX(-50%);
+}
+
+.what, .who, .where, .when, .dressCode {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 15%;
+}
+
+.what { top: 100px; }
+.who { top: 170px; }
+.where { top: 240px; }
+.when { top: 310px; }
+.dressCode { top: 380px; }
+
+.whatIcon, .whoIcon, .whereIcon, .whenIcon, .dressCodeIcon {
+    width: 30px;
+    position: absolute;
+}
+
+.whatIcon { top: 117px; left: 11%; }
+.whoIcon { top: 187px; left: 11%; }
+.whereIcon { top: 257px; left: 11%; }
+.whenIcon { top: 327px; left: 11%; }
+.dressCodeIcon { top: 397px; left: 11%; }
+
+.quote {
+    font-family: Georgia;
+    font-size: 8.2px;
+    position: absolute;
+    text-align: center;
+    bottom: 78%;
+    left: 70%;
+    color: black;
+    z-index: 2;
+}
+
+.polaroidQuote {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    left: 70%;
+}
+
+.polaroid {
+    width: 250px;
+    position: absolute;
+    left: 70%;
+    top: 7%;
+}
+
+.flowers {
+    width: 200px;
+    position: absolute;
+    left: 73%;
+    top: 9%;
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    
+    .valDin {
+        font-size: 30px;
+        top: 10px;
+    }
+
+    
+    .what, .who, .where, .when, .dressCode {
+        font-size: 16px;
+        left: 10%;
+    }
+
+    .what { top: 80px; }
+    .who { top: 140px; }
+    .where { top: 200px; }
+    .when { top: 260px; }
+    .dressCode { top: 320px; }
+
+    
+    .whatIcon, .whoIcon, .whereIcon, .whenIcon, .dressCodeIcon {
+        width: 25px;
+        left: 7%;
+    }
+
+    
+    .quote {
+        font-size: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .polaroidQuote {
+        font-size: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .polaroid {
+        width: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 25%;
+    }
+
+    .flowers {
+        width: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 35%;
+    }
+}
+

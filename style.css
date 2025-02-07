@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    background-image: url('https://media0.giphy.com/media/11fIOE3vkIPdIY/200.webp?cid=790b7611afz5usc9ep7x5o119uu0rb7xer5gx33cn4ym9g3j&ep=v1_gifs_search&rid=200.webp&ct=g');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#myBtn {
+    text-align: center;
+    width: 300px;
+    font-size: 50px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+
+.bearGIF, .cat1GIF, .cat2GIF {
+    position: absolute;
+    top: 20%;  
+    width: 300px;
+    max-width: 80vw;
+    height: auto;
+}
+
+.bearGIF {
+    left: 36%;
+    top: 25%;
+}
+.cat1GIF {
+    left: 5%;
+    top: 25%; 
+}
+.cat2GIF {
+    right: 10%;
+    top: 28%;
+}
+
+p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+    position: absolute;
+    top: 40%;
+}
+
+#yesBtn, #noBtn {
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 80px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    
+}
+
+#yesBtn {
+    background-color: hsl(141, 63%, 42%);
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 45%
+}
+
+#yesBtn:hover {
+    background-color: hsl(141, 63%, 52%);
+}
+
+#yesBtn:active {
+    background-color: hsl(141, 63%, 62%);
+}
+
+#noBtn {
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 45%
+}
+
+@media screen and (max-width: 600px) {
+    #myBtn {
+        width: 250px;
+        font-size: 40px;
+    }
+    .gifRow img {
+        width: 250px;
+    }
+    p {
+        font-size: 40px;
+    }
+    #yesBtn, #noBtn {
+        width: 70px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
